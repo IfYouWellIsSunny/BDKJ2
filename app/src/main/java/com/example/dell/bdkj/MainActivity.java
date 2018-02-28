@@ -29,7 +29,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //初始化控件
         initView();
 
-        //分支测试
     }
 
     private void initView() {
