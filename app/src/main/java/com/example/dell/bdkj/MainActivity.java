@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.tencent.bugly.Bugly;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText index_edit_tel;
@@ -26,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         //初始化控件
         initView();
+
+        //分支测试
     }
 
     private void initView() {
@@ -39,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         index_login.setOnClickListener(this);
         index_enter.setOnClickListener(this);
     }
+
     //点击事件
     @Override
     public void onClick(View v) {
@@ -54,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
         }
     }
+
     //判定输入框是否为空
     private void submit() {
         String tel = index_edit_tel.getText().toString().trim();
